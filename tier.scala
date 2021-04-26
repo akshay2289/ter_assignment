@@ -28,12 +28,12 @@ object tier extends App {
   val finaldf = inputdf.
                 toDF(new_columns:_*)
                 
-  finaldf.show()
+  //finaldf.show()
   
-//  finaldf.
-//  write.
-//  mode(SaveMode.Append).
-//  saveAsTable("weather")
+  finaldf.
+  write.
+  mode(SaveMode.Append).
+  saveAsTable("weather")
   
   spark.close()
 }
