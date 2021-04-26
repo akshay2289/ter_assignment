@@ -7,7 +7,7 @@ import org.apache.spark.sql.SaveMode
 object tier_segment_tracks extends App {
     Logger.getLogger("org").setLevel(Level.ERROR)
   val spark = SparkSession.builder().
-    appName("weather").
+    appName("segment_tracks").
     master("local[*]").
     getOrCreate()
 
